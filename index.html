@@ -2,10 +2,117 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PeakHub</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0d1117;
+      color: #e6edf3;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(135deg, #1f6feb, #8957e5);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 1.25rem;
+      opacity: 0.9;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 28px;
+      background: #ffffff;
+      color: #1f6feb;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    main h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 12px;
+      padding: 30px;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #58a6ff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      border-top: 1px solid #30363d;
+      color: #8b949e;
+    }
+  </style>
 </head>
 <body>
-  <h1>Witaj na mojej stronie!</h1>
-  <p>To jest pierwsza wersja strony.</p>
+
+  <header>
+    <h1>Witaj w PeakHub</h1>
+    <p>Tu wkrótce pojawi się coś świetnego.</p>
+    <a class="btn" href="#o-nas">Dowiedz się więcej</a>
+  </header>
+
+  <main>
+    <h2 id="o-nas">Co oferujemy</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Pierwsza rzecz</h3>
+        <p>Tutaj wpiszesz opis czegoś, co chcesz pokazać.</p>
+      </div>
+      <div class="card">
+        <h3>Druga rzecz</h3>
+        <p>Tutaj wpiszesz kolejny opis.</p>
+      </div>
+      <div class="card">
+        <h3>Trzecia rzecz</h3>
+        <p>I tak dalej, dopasujesz to do siebie.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 PeakHub</p>
+  </footer>
+
 </body>
 </html>
